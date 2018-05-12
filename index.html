@@ -5,17 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         
-<style>
-    body
-    {
-        //background-image:url('IMG_0388.JPG');
+    <style>
+        body
+        {
+            background-image:url('IMG_0388.JPG');
+            
+            background-image: url("IMG_0388.JPG");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
         
-        background-image: url("IMG_0388.JPG");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-    }
-</style>
+   input:focus{
+   border:2px solid #FF0000;
+   }
+    </style>
+        
+        
         
        
     </head>
@@ -23,49 +29,51 @@
     
     <body>
     
-    <div class="alert alert-success" role="alert">
-        <h2>神魔之塔 蝸牛概論</h2>
-    </div>
-    
-    <button type="button" class="btn btn-primary">髒髒</button>
-    <button type="button" class="btn btn-secondary">臭臭</button>
-    <button type="button" class="btn btn-success">口愛</button>
-    <button type="button" class="btn btn-danger">兩顆</button>
-    <button type="button" class="btn btn-warning">撒</button>
-    <button type="button" class="btn btn-info">一跌</button>
-    <button type="button" class="btn btn-light">兩疊</button>
-    <p> 
-    <p> 
-    
-    <select>
-		<option value="0">操作</option>
-		<option value="addpool">加入目標池</option>
-		<option value="removeItem">移出目標池</option>
-		<option value="remove">刪除項目</option>
-	</select>
-    
-    
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"      aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-        </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-    </div>
-    
-    
-    
-    
-    
-    
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <div class="alert alert-success" role="alert" >
+            <div style="text-align:center;font-size:30px;">神魔之塔 <span style="font-size:50px">蝸牛概論</span></div>
+        </div>
+        
+        <button type="button" class="btn btn-primary">髒髒</button>
+        <button type="button" class="btn btn-secondary">臭臭</button>
+        <button type="button" class="btn btn-success">口愛</button>
+        <button type="button" class="btn btn-danger">兩顆</button>
+        <button type="button" class="btn btn-warning">撒</button>
+        <button type="button" class="btn btn-info">一跌</button>
+        <button type="button" class="btn btn-light">兩疊</button>
+        <p> 
+        <p> 
+        
+        <select>
+            <option value="0">操作</option>
+            <option value="addpool">加入目標池</option>
+            <option value="removeItem">移出目標池</option>
+            <option value="remove">刪除項目</option>
+        </select>
+        
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"      aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+            </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        </div>
+        
+        <div>
+        <span style="font-size:24px;color:white;">UID:</span> <input type="text"/>
+        </div>
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     
     </body>
 </html>
