@@ -15,22 +15,85 @@
         <!-- Custom styles for this template -->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
         <link href="blog.css" rel="stylesheet">
-            <style>
+            <style id="bg_color">
                 body
                 {
                     background-color:#FFCCCC;
+                    
                 }
             </style>
+
+        <style >
+                    .onoffswitch {
+                        position: relative; width: 134px;
+                        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+                    }
+                    .onoffswitch-checkbox {
+                        display: none;
+                    }
+                    .onoffswitch-label {
+                        display: block; overflow: hidden; cursor: pointer;
+                        border: 2px solid #999999; border-radius: 20px;
+                    }
+                    .onoffswitch-inner {
+                        display: block; width: 200%; margin-left: -100%;
+                        transition: margin 0.3s ease-in 0s;
+                    }
+                    .onoffswitch-inner:before, .onoffswitch-inner:after {
+                        display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
+                        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+                        box-sizing: border-box;
+                    }
+                    .onoffswitch-inner:before {
+                        content: "夜間模式:ON";
+                        padding-left: 10px;
+                        background-color: #34A7C1; color: #FFFFFF;
+                    }
+                    .onoffswitch-inner:after {
+                        content: "夜間模式:OFF";
+                        padding-right: 10px;
+                        background-color: #EEEEEE; color: #999999;
+                        text-align: right;
+                    }
+                    .onoffswitch-switch {
+                        display: block; width: 20px; margin: 3.5px;
+                        background: #FFFFFF;
+                        position: absolute; top: 0; bottom: 0;
+                        right: 103px;
+                        border: 2px solid #999999; border-radius: 20px;
+                        transition: all 0.3s ease-in 0s; 
+                    }
+                    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+                        margin-left: 0;
+                    }
+                    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+                        right: 0px; 
+                    }
+        </style>
+        
+        
+        
     </head>
     <body>
         <script type="text/javascript" language="JavaScript" src="./langConvert.js"></script> <!--繁簡-->
 
 <div class="container"> 
-    <div class="col- pt-2">
+    
+
+    <div  class="col- pt-2" >  
         <button type="button" class="btn btn-sm btn-outline-secondary"  onclick=javascript:TSC("big5")>繁體</button>
         <button type="button" class="btn btn-sm btn-outline-secondary" onclick=javascript:TSC("gb")>簡體</button>
-        
     </div>
+    <p>
+    <div class="onoffswitch" >
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+    
+ 
     <p>
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
         <div class="card-body">
