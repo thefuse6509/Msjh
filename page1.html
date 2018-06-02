@@ -78,31 +78,48 @@
         <script type="text/javascript" language="JavaScript" src="./langConvert.js"></script> <!--繁簡-->
 
 <div class="container"> 
-    
-
     <div  class="col- pt-2" >  
         <button type="button" class="btn btn-sm btn-outline-secondary"  onclick=javascript:TSC("big5")>繁體</button>
         <button type="button" class="btn btn-sm btn-outline-secondary" onclick=javascript:TSC("gb")>簡體</button>
     </div>
     <p>
     <div class="onoffswitch" >
-        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="chkfalse()">
         <label class="onoffswitch-label" for="myonoffswitch">
             <span class="onoffswitch-inner"></span>
             <span class="onoffswitch-switch"></span>
         </label>
     </div>
+    <script type="text/javascript">
+            function chkfalse() {
+              // Get the checkbox
+              var checkBox = document.getElementById("myonoffswitch");
+              // Get the output text
+              var text = document.getElementById("change_color");<!--標題-->
+              var text2 = document.getElementById("change_color2"); <!--內文-->
+              var my_id = document.getElementById("bg_color1"); <!--內文背景-->
+              // If the checkbox is checked, display the output text
+              if (checkBox.checked){
+                text.style.color='white';
+                text2.style.color='white';
+                my_id.className="card-body bg-dark";
+              } else {
+                text.style.color='black';
+                text2.style.color='black';
+                my_id.className="card-body";
+              }
+            }
+    </script>
     
- 
     <p>
-    <div class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body">
+    <div id="change_color" class="card flex-md-row mb-4 box-shadow h-md-250">
+        <div  id="bg_color1" class="card-body">
             <p>
-            <h3 class="mb-0">
-                <a class="text-dark" href="#">神魔公告</a>
+            <h3 >
+                <a >神魔公告</a>
             </h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-<pre>
+            <div >Nov 12</div>
+<pre id="change_color2" >
 <!--文字輸入在此-->
 各位召喚師大家好：
 
