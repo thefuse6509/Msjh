@@ -33,7 +33,11 @@
                     
                 }
             </style>
-
+        
+            <style type="text/css">
+            .top{width:100%;padding:7px ;text-align:center;position:fixed;top:0px;left:0px;background:#d3d3d3;border:solid 1px #000;z-index:999}
+            </style>
+        
         <style> 
             pre{  
                 white-space:pre-wrap;  
@@ -67,7 +71,7 @@
                     }
                     .onoffswitch-inner:before {
                         content: "夜間模式:ON";
-                        padding-left: 10px;
+                        padding-left:-10px;
                         background-color: #34A7C1; color: #FFFFFF;
                     }
                     .onoffswitch-inner:after {
@@ -99,18 +103,21 @@
         <script type="text/javascript" language="JavaScript" src="./langConvert.js"></script> <!--繁簡-->
 
 <div class="container"> 
-    <div  class="" style="float:right;">  
+    <div class="top" >
+    <div  class="card-body" style="float:right;">  
         <button type="button" class="btn btn-sm btn-outline-secondary"  onclick=javascript:TSC("big5")>繁體</button>
         <button type="button" class="btn btn-sm btn-outline-secondary" onclick=javascript:TSC("gb")>簡體</button>
     </div>
     <p>
-    <div class="onoffswitch"  >
+    <div class="onoffswitch "  >
         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="chkfalse()">
         <label class="onoffswitch-label" for="myonoffswitch">
             <span class="onoffswitch-inner"></span>
             <span class="onoffswitch-switch"></span>
         </label>
     </div>
+    </div>
+
     <script type="text/javascript">
             function chkfalse() {
               // Get the checkbox
@@ -132,10 +139,11 @@
             }
     </script>
     
-    <p>
+    <br><br><br><br>
+    
     <div id="change_color" class="card flex-md-row mb-4 box-shadow h-md-250" >
         <div  id="bg_color1" class="card-body d-flex flex-column align-items-start" >
-            <p>
+            
             <h3 >
                 <a >［丹雲］微熱1</a>
             </h3>
